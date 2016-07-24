@@ -1,0 +1,69 @@
+// @import url(https://fonts.googleapis.com/css?family=Nunito);
+
+@import url(https://fonts.googleapis.com/css?family=Inconsolata:400,700);
+
+.p-yellow
+  color: #ffdb56
+
+a
+  transition-property: all
+  transition: 0.3s linear
+  text-decoration: none
+a:hover
+  color: #498aeb
+
+
+.wrapper
+  padding: 80px 80px
+  font-family: "Inconsolata"
+
+.P-header
+  margin-bottom: 160px
+
+
+.P-header ul
+  display: -webkit-flex
+  display: -moz-flex
+  display: -ms-flex
+  display: -o-flex
+  display: flex
+
+
+
+.g-nav
+  flex-direction: row
+  margin-right: 32px
+
+.g-nav a
+  color: #b2b2b2
+
+.P-introduction
+  color: #333
+  margin-bottom: 64px
+
+.name
+  font-size: 16px
+  margin-bottom: 32px
+
+.job
+  margin-bottom: 32px
+  line-height: 1.2
+
+.mission
+  font-size: 16px
+  line-height: 1.6
+  color: #333
+  margin-bottom: 32px
+
+.P-footer
+  background: #fff
+  color: #b2b2b2
+
+.touch
+  color: #b2b2b2
+  display: inline-block
+  margin-bottom: 32px
+
+.P-follow
+.follow-me
+  margin-bottom: 32px
