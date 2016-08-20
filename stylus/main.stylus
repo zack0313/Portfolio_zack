@@ -2,15 +2,21 @@
 
 @import url(https://fonts.googleapis.com/css?family=Inconsolata:400,700);
 
+/ variable list start
 .p-yellow
   color: #ffdb56
+
+bace-text-color = #333
+bace-link-color = #498aeb
+
+/ variable list finish
 
 a
   transition-property: all
   transition: 0.3s linear
   text-decoration: none
 a:hover
-  color: #498aeb
+  color: bace-link-color
 
 
 .wrapper
@@ -28,6 +34,26 @@ a:hover
   display: -o-flex
   display: flex
 
+.P-header ul li a
+  position: relative;
+  display: inline-block;
+
+.P-header ul li a:hover
+  color: bace-link-color
+
+.P-header ul li a:before
+  position: absolute;
+  top: 1.3em;
+  left: 0;
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 2px;
+  background: bace-link-color;
+  transition: 0.3s;
+
+.P-header ul li a:hover:before
+  width: 100%;
 
 
 .g-nav
@@ -38,7 +64,7 @@ a:hover
   color: #b2b2b2
 
 .P-introduction
-  color: #333
+  color: bace-text-color
   margin-bottom: 64px
 
 .name
@@ -52,7 +78,6 @@ a:hover
 .mission
   font-size: 16px
   line-height: 1.6
-  color: #333
   margin-bottom: 32px
 
 .P-footer
