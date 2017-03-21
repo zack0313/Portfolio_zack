@@ -12,8 +12,11 @@ a {
 a:hover {
   color: #498aeb;
 }
+a.touch:hover img {
+  fill: #498aeb;
+}
 .wrapper {
-  padding: 80px 80px;
+  padding: 40px 80px;
   font-family: "Inconsolata";
 }
 .P-header {
@@ -25,6 +28,7 @@ a:hover {
   display: -ms-flex;
   display: -o-flex;
   display: flex;
+  font-size: 14px;
 }
 .P-header ul li a {
   position: relative;
@@ -56,7 +60,8 @@ a:hover {
 }
 .P-introduction {
   color: #333;
-  margin-bottom: 64px;
+  margin-bottom: 40px;
+  text-align: center;
 }
 .name {
   font-size: 16px;
@@ -67,11 +72,15 @@ a:hover {
   line-height: 1.2;
 }
 .mission {
-  font-size: 16px;
+  font-size: 12px;
   line-height: 1.6;
   margin-bottom: 32px;
 }
 .P-footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
   background: #fff;
   color: #b2b2b2;
 }
@@ -79,8 +88,18 @@ a:hover {
   color: #b2b2b2;
   display: inline-block;
   margin-bottom: 32px;
+  width: 50%;
 }
-.P-follow,
+.P-follow {
+  text-align: center;
+}
+.P-follow .sns-group {
+  display: flex;
+  justify-content: center;
+}
+.P-follow .sns-group li:not(:first-child) {
+  padding-left: 40px;
+}
 .follow-me {
   margin-bottom: 32px;
 }
